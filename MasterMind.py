@@ -102,7 +102,7 @@ def kysy(Rivi, TarkistusRivi): #kysyy uuden rivin ja tarkistaa onko se sallittu 
 
 #--------------------------------------------------------------------------------------------------------------------------------
 	
-print("\n\n  Tervetuloa pelaamaan peliä MasterMind!") #alku tekstit
+print("\n\n  Tervetuloa pelaamaan peliä nimeltä MasterMind!") #alku tekstit
 
 time.sleep(1)
 
@@ -130,7 +130,7 @@ while Pelijatkuu: #toistaa peliä ja tarkastaa voiton
 		kysy(rivi1, rivi1tarkistus)
 		nayta()
 		
-		if rivi1tarkistus[0] == 4:
+		if rivi1tarkistus[0] == 4: 
 			print("Oikein! Voitit pelin!")
 			break
 		
@@ -191,6 +191,8 @@ while Pelijatkuu: #toistaa peliä ja tarkastaa voiton
 			break
 			
 		print("Hävisit pelin! Yritykset loppuivat!")
+		
+	print("koodi oli ", OikeaVastaus)
 		
 	ke = input("Haluatko pelata uudestaa? K/E :")
 	if ke == "K":
